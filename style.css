@@ -1,0 +1,23 @@
+body{
+	font-family:arial;
+}
+
+h2{
+	text-align:center;
+}
+
+h3{
+	text-align:left;
+}
+
+.head{
+	background:rgb(150,150,255)
+}
+
+table, th, td{
+	border: 1px solid; 
+}
+
+table{
+	width: 100%;
+}
