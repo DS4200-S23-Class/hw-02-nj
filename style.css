@@ -22,22 +22,25 @@ table{
 	width: 100%;
 }
 
-.some-page-wrapper {
-  margin: 15px;
-  background-color: red;
+.task-abstraction {
+  display: flex;  
+  font-weight: bold;
+  text-align: center; 
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+.task-abstraction > * {
+  padding: 10px;
+  flex: 1 100%;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+@media all and (min-width: 800px) {
+  .vis1 { order: 1; } 
+  .vis2{ order: 2; }
 }
+
+body {
+  padding: 2em; 
+}
+
+
 
