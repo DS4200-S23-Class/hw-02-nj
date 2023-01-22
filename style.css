@@ -22,25 +22,30 @@ table{
 	width: 100%;
 }
 
-.task-abstraction {
+
+
+.flexbox {
   display: flex;  
-  font-weight: bold;
-  text-align: center; 
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
 }
 
-.task-abstraction > * {
+
+/*.task-abstraction > * {
   padding: 10px;
   flex: 1 100%;
-}
+}*/
 
-@media all and (min-width: 800px) {
-  .vis1 { order: 1; } 
-  .vis2{ order: 2; }
-}
+/*@media all and (min-width: 800px) {
+  .vis2 { order: 1; } 
+  .vis1 { order: 2; }
+}*/
 
-body {
+/*body {
   padding: 2em; 
 }
-
+*/
 
 
