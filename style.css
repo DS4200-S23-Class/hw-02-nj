@@ -32,6 +32,18 @@ table{
   align-content: center;
 }
 
+.circle {
+  fill: purple;
+  opacity: 0.5;
+  r: 40;
+}
+
+.rect {
+  stroke: black;
+  stroke-width: 2;
+  fill: purple;
+}
+
 
 /*.task-abstraction > * {
   padding: 10px;
