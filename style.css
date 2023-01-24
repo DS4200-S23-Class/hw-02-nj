@@ -25,23 +25,26 @@ table{
 
 img{
   max-height: 100%;
-  max-width: 50%;
+  max-width: 48vw;
 }
 
 
 .row {
   display: flex;  
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
-/*  width: 100%;*/
+  flex-wrap:nowrap;
+}
+
+.cc{
+  color:rgb(0,0,255);
 }
 
 circle {
   fill: purple;
   opacity: 0.5;
-  r: 47;
 }
 
 circle:hover {
@@ -68,6 +71,5 @@ rect:hover {
   align-content: center;
 
 }
-
 
 
