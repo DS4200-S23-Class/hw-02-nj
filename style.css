@@ -22,7 +22,7 @@ table{
 	width: 100%;
 }
 
-
+/* Prevents images from overflowing in flexbox.*/
 img{
   max-height: 100%;
   max-width: 48vw;
@@ -63,7 +63,7 @@ rect {
 rect:hover {
   fill: yellow;
 }
-
+/* Keeps shapes spread out evenly on window dimension changes */
 #decoration {
   display: flex;
   flex-direction: row;
