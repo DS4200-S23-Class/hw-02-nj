@@ -22,17 +22,17 @@
 				<tr>
 					<td>UFO</td>
 					<td><a href=./data/UFO.csv>link</a></td>
-					<td>Table</td>
+					<td>Table - Contains items and attributes</td>
 				</tr>
 				<tr>
 					<td>Airports</td>
 					<td><a href=./data/Airports.csv>link</a></td>
-					<td>Geometry</td>
+					<td>Geometry - Contains items and positions</td>
 				</tr>
 				<tr>
 					<td>Google-web</td>
 					<td><a href=./data/Google-Web.txt>link</a></td>
-					<td>Network</td>
+					<td>Network - Contains nodes and links</td>
 				</tr>
 			</table>
 		</div>
@@ -41,30 +41,35 @@
 			<h2>Data Types</h2>
 			<h3>UFO</h3>
 			<ul>
-				<li>Items</li>
-				<li>Attributes</li>
-				<ul>
-					<li>Ordered-quantitative-sequential</li>
-					<li>Ordered-quantitative-cyclic</li>
-					<li>Categorical</li>
-				</ul>
+				<li>Row - Item (Table structure)</li>
+				<li>Datetime - Attribute</li>
+				<ul><li>Quantitative,sequantial,cyclic - Time is cyclic and years are sequential, so best to treat as both.</li></ul>
+				<li>City - Attribute</li>
+				<ul><li>Categorical - Qualitative with definite answers.</li></ul>
+				<li>State - Attribute</li>
+				<ul><li>Categorical - Qualitative with definite answers.</li></ul>
+				<li>Country - Attribute</li>
+				<ul><li>Categorical - Qualitative with definite answers.</li></ul>
+				<li>Shape - Attribute</li>
+				<ul><li>Categorical - Qualitative with definite answers.</li></ul>
+				<li>Duration - Attribute</li>
+				<ul><li>Quantitative,sequential. - Measured in seconds, which can only increase.</li></ul>
 			</ul>
 			<h3>Airports</h3>
 			<ul>
-				<li>Items</li>
-				<li>Attributes</li>
+				<li>Row - Item (Table structure)</li>
+				<li>Airport Name - Attribute</li>
 					<ul>
-						<li>Categorical</li>
+						<li>Categorical - Qualitative with definite answers.</li>
 					</ul>
-				<li>Position</li>
+				<li>Latitude - Position (as it is a coordinate)</li>
+				<li>Longitude - Position (as it is a coordinate)</li>
 			</ul>
 			<h3>Google-web</h3>
 			<ul>
-				<li>Attributes</li>
-				<ul>
-					<li>Ordered-quantitative-sequential</li>
-				</ul>
-				<li>Link</li>
+				<li>Row - Link (each row acts as a link from one node id to another)</li>
+				<li>FromNodeId - Node (id of a node)</li>
+				<li>ToNodeId - Node (id of a node)</li>
 			</ul>
 		</div>
 	</div>
