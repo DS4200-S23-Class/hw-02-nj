@@ -28,16 +28,19 @@ img{
   max-width: 48vw;
 }
 
-/*Why row instead of column? It seemed more intuitive to create a flexbox that was one row, and have 
- * the columns inside be divs inside a row. One row with 2 divs functions similarly to a flexbox with 2 columns
- * and allowed us greater centering control to match the video reference better. */
-.row {
+/*Why box of columns? It seemed intuitive to make a single row that contained two columns inside of it. */
+.box {
   display: flex;  
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  flex-wrap:nowrap;
+  flex-wrap:wrap;
+}
+.column{
+  display:flex;
+  flex-direction:column;
+  flex:50%;
 }
 
 .cc{
